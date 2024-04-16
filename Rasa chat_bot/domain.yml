@@ -1,0 +1,37 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - food
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ign.com%2Farticles%2Fbest-anime-characters&psig=AOvVaw39Kw631hSQpye7Wya33RGe&ust=1711601422334000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICG9qjSk4UDFQAAAAAdAAAAABAD"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_food:
+  - text: "What would you like to eat?"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
